@@ -68,6 +68,7 @@ hr {
     border: 0 none;
     box-shadow: 0 1px 0 #FFFFFF;
     height: 1px;
+    margin: 15px 0;
 }
 
 [class^="icon-"], [class*=" icon-"] {
@@ -174,12 +175,6 @@ footer span {
     display: block;
     font-size: 0.8em;
     padding-top: 0.8em;
-}
-footer hr
-{
-    margin: 0;
-    padding: 0 70px;
-    width: 80%;
 }
 footer a {
     display: block;
