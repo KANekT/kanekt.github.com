@@ -1,0 +1,188 @@
+/* RESET */
+html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input,abbr,article,aside,command,details,figcaption,figure,footer,header,hgroup,mark,meter,nav,output,progress,section,summary,time { margin: 0; padding: 0; }
+h1,h2,h3,h4,h5,h6,pre,code,address,caption,cite,code,em,strong,th,figcaption { font-size: 1em; font-weight: normal; font-style: normal; }
+fieldset,iframe { border: none; }
+caption,th { text-align: left; }
+table { border-collapse: collapse; border-spacing: 0; }
+article,aside,footer,header,hgroup,nav,section,figure,figcaption { display: block; }
+
+body
+{
+    background-image: url("/img/background-interlaced.png");
+    color: #333333;
+    font: 12px/18px "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;
+}
+.main
+{
+    margin: 0 auto;
+    min-width: 948px;
+    width: 948px;
+    padding: 20px 0;
+}
+.body_top
+{
+    display: block;
+    width: 948px;
+    height: 83px;
+    background-image: url("/img/body_top.png");
+}
+.body_middle
+{
+    display: block;
+    width: 948px;
+    background-image: url("/img/body_middle.png");
+}
+.body_bottom
+{
+    display: block;
+    width: 948px;
+    height: 83px;
+    background-image: url("/img/body_bottom.png");
+}
+#blog-title
+{
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+    margin-top: 0;
+    font-size: 36px;
+    line-height: 40px;
+
+}
+#blog-description
+{
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+    font-size: 16px;
+    line-height: 18px;
+}
+ul > li {
+    display: inline;
+}
+#contacts
+{
+    padding: 0 70px;
+    text-align: center;
+}
+hr {
+    background-color: #777;
+    border: 0 none;
+    box-shadow: 0 1px 0 #FFFFFF;
+    height: 1px;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    background-image: url("/img/icons-sprite.png");
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    vertical-align: text-bottom;
+    width: 30px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+#icons
+{
+    margin-top: 15px;
+}
+.icon-mail {
+    background-position: -12px -13px;
+}
+.icon-mail:hover {
+    background-position: -12px -43px;
+}
+
+.icon-jabber {
+    background-position: -63px -13px;
+}
+.icon-jabber:hover {
+    background-position: -63px -43px;
+}
+
+.icon-phone {
+    background-position: -113px -13px;
+}
+.icon-phone:hover {
+    background-position: -113px -43px;
+}
+
+.icon-vk {
+    background-position: -161px -13px;
+}
+.icon-vk:hover {
+    background-position: -161px -43px;
+}
+
+.icon-github {
+    background-position: -211px -13px;
+}
+.icon-github:hover {
+    background-position: -211px -43px;
+}
+
+.icon-punbb {
+    background-position: -258px -13px;
+}
+.icon-punbb:hover {
+    background-position: -258px -43px;
+}
+
+.icon-settings {
+    background-position: -308px -13px;
+}
+.icon-settings:hover {
+    background-position: -308px -43px;
+}
+
+.icon-user {
+    background-position: -355px -13px;
+}
+.icon-user:hover {
+    background-position: -355px -43px;
+}
+
+#carousel > div {
+    float: left;
+    height: 225px;
+    overflow: hidden;
+    padding: 0 100px;
+    width: 400px;
+}
+#carousel img {
+    border: medium none;
+    display: block;
+    float: left;
+    margin: 20px 20px 0 0;
+}
+#carousel h3 {
+    font-size: 30px;
+    line-height: 30px;
+    margin: 20px 0;
+}
+#carousel p {
+    line-height: 20px;
+}
+
+footer {
+    clear: both;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+footer span {
+    display: block;
+    font-size: 0.8em;
+    padding-top: 0.8em;
+}
+footer hr
+{
+    margin: 0;
+    padding: 0 70px;
+    width: 80%;
+}
+footer a {
+    display: block;
+    font-size: 0.8em;
+    padding-top: 3.5em;
+}
