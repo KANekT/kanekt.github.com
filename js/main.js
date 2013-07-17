@@ -29,6 +29,15 @@ function setPage(page, title) {
     })
 }
 
+function validateEmail($email) {
+    var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+    if( !emailReg.test( $email ) ) {
+        return false;
+    } else {
+        return true;
+    }
+}
+
 $(function() {
     if (history.pushState) {
         window.onpopstate = function(event) {
@@ -45,5 +54,47 @@ $(function() {
         })
     }
 
-});
+    $("#submit").live("click", function(e){
+        e.preventDefault();
+        var noError = true;
 
+        if ($("#name").val().length == 0)
+        {
+            noError = false;
+            $("#error-name").show();
+        }
+        else
+        {
+            $("#error-name").hide();
+        }
+
+        if ($("#email").val().length == 0 || !validateEmail($("#email").val()))
+        {
+            noError = false;
+            $("#error-email").show();
+        }
+        else
+        {
+            $("#error-email").hide();
+        }
+
+        if ($("#message").val().length == 0)
+        {
+            noError = false;
+            $("#error-message").show();
+        }
+        else
+        {
+            $("#error-message").hide();
+        }
+
+        if (noError)
+        {
+            var data = $("form").serialize();
+            $.post('http://mail.kanekt.ru/send',data,function(data){
+                $(".email-send").text('Сообщение отправлено');
+            });
+        }
+        return false;
+    });
+});

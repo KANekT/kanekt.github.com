@@ -47,7 +47,7 @@
     <div class="cRight">
         <h1>Написать письмо:</h1>
         <br />
-        <form action="contacts.html" method="post">
+        <form action="email" method="post">
             <input type="hidden" value="feedbackForm" name="formid">
             <div class="field">
 
@@ -67,6 +67,8 @@
             <div class="field">
                 <input type="submit" value="Отправить сообщение" class="button bLeft" name="submit" id="submit">
                 <input type="reset" value="Очистить" class="button bRight" name="reset" id="reset">
+            </div>
+            <div class="field"><span class="email-send"></span>
             </div>
         </form>
     </div>

@@ -6,11 +6,20 @@ caption,th { text-align: left; }
 table { border-collapse: collapse; border-spacing: 0; }
 article,aside,footer,header,hgroup,nav,section,figure,figcaption { display: block; }
 
+@font-face {
+    font-family: 'PlakatCmpl';
+    src: url('font.eot');
+    src: local('вє'), url('font.woff') format('woff'), url('font.ttf') format('truetype'), url('font.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body
 {
+    background-color: #00579c;
     background-image: url("/img/background-interlaced.png");
     color: #333333;
-    font: 12px/18px "Calibri",Helvetica,Arial,Verdana,sans-serif;
+    font: 12px/18px Calibri,Helvetica,Arial,Verdana,sans-serif;
 }
 .main
 {
@@ -42,13 +51,13 @@ body
 #content h1
 {
     font-family: 'EB Garamond', serif;
-    text-align: center;
+    text-align: left;
     font-size: 16px;
     line-height: 18px;
 }
 #blog-title
 {
-    font-family: 'EB Garamond', serif;
+    font-family: PlakatCmpl, serif;
     text-align: center;
     margin-top: 0;
     font-size: 36px;
@@ -74,17 +83,16 @@ ul > li {
 }
 #contacts
 {
-    padding: 0 70px;
+    padding: 0 90px;
     text-align: center;
 }
 #content
 {
-    padding: 0 80px;
+    padding: 0 90px;
 }
 hr {
-    background-color: #777;
-    border: 0 none;
-    box-shadow: 0 1px 0 #FFFFFF;
+    border: none;
+    background-image: url("/img/line.png");
     height: 1px;
     margin: 15px 0;
 }
@@ -193,11 +201,6 @@ footer span {
     font-size: 0.8em;
     padding-top: 0.8em;
 }
-footer a {
-    display: block;
-    font-size: 0.8em;
-    padding-top: 3.5em;
-}
 
 dl {
     margin-bottom: 20px;
@@ -227,24 +230,22 @@ dl dt {
     text-align: right;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 40px;
+    width: 20px;
 }
 dl dd {
-    margin-left: 60px;
+    margin-left: 40px;
 }
 
 #about dt {
-   margin: 10px 0 0 24px;
+   margin: 7px 0 0;
 }
 
 #about .cLeft h1
 {
-    padding-left: 15px;
     text-align: left;
 }
 #about .cRight h1
 {
-    margin-left: -17px;
     text-align: left;
 }
 
@@ -255,14 +256,14 @@ dl dd {
     display: block;
     float: left;
     padding: 15px 0;
-    width: 38.7179%;
+    width: 28.7179%;
 }
 #about .cRight {
     display: block;
     float: left;
     margin-left: 2.5641%;
     padding: 15px 0;
-    width: 58.7179%;
+    width: 68.7179%;
 }
 
 FORM .field {
@@ -301,6 +302,13 @@ FORM textarea
     color: #B94A48;
 }
 
+.email-send
+{
+    text-align: center;
+    display: block;
+    font-size: 16px;
+}
+
 .bLeft {
     display: block;
     float: left;
@@ -316,10 +324,9 @@ FORM textarea
 #development div
 {
     line-height: 20px;
-    padding-left: 10px;
+    padding: 5px 0 0 5px;
 }
 #development .work
 {
     padding-left: 25px;
 }
-
