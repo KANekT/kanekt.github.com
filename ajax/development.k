@@ -1,7 +1,7 @@
 <div id="development">
     <h1>Опыт работы:</h1>
     <div>
-        <hr>
+        <br>
         <div>
             <div>
                 Май 2008 — по настоящее время
@@ -13,12 +13,12 @@
                 <b>Web программист</b>
             </div>
             <div class="work">
-                Разработка новых функций и расширений для PunBB
+                — Разработка новых функций и расширений для PunBB
                 <br />
-                Поддержка пользователей (punbb.ru)
+                — Поддержка пользователей (punbb.ru)
             </div>
         </div>
-        <hr>
+        <br>
         <div>
             <div>
                 Сентябрь 2006 — Сентябрь 2013
@@ -30,22 +30,22 @@
                 <b>Web программист</b>
             </div>
             <div class="work">
-                разработка приложений на C#, ASP.NET, (WebWorms, MVC 3)
+                — Разработка приложений на C#, ASP.NET, (WebWorms, MVC 3)
                 <br />
-                back end обработка запросов с помощью jQuery (jqGrid, jQuery UI)
+                — Back end обработка запросов с помощью jQuery (jqGrid, jQuery UI)
                 <br />
-                разработка и верстка дизайна с помощью HTML, CSS (Bootstrap)
+                — Разработка и верстка дизайна с помощью HTML, CSS (Bootstrap)
                 <br />
-                работа с MS SQL: T-SQL и проектирование структуры БД
+                — Работа с MS SQL: T-SQL и проектирование структуры БД
                 <br />
-                Использование средств командной разработки Microsoft Visual SourceSafe
+                — Использование средств командной разработки Microsoft Visual SourceSafe
             </div>
         </div>
     </div>
     <hr>
     <h1>Ключевые навыки:</h1>
     <div>
-        <hr>
+        <br>
         <div>
             <div class="work">
                 — Знание ASP.Net, PHP

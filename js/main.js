@@ -12,6 +12,10 @@ $(document).ready(function(){
     {
         setPage(window.location.hash, '');
     }
+    else
+    {
+        setPage('#development', '');
+    }
 
     NavigationCache[window.location.hash] = $('#content').html();
     history.pushState({page: window.location.hash, type: "page"}, document.title, window.location.hash);
