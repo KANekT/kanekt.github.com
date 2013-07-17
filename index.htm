@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="/js/history.min.js"></script>
     <script src="/js/bootstrap.js"></script>
     <script src="/js/main.js"></script>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -21,118 +22,14 @@
         <nav id="contacts">
             <div id="contacts-pad">
                 <ul id="icons">
-                    <li title="GMail" class="icon-mail" data-toggle="popover" data-placement="bottom" data-content='
-                        <a href="mailto:kanektikys@gmail.com" title="Написать письмо">KANekTikys@gmail.com</a>
-                    '>
-                            <!--<p>Тут должна быть форма отправки письма, но она пока не работает.</p>-->
-                    </li>
-                    <li title="Jabber" class="icon-jabber" data-toggle="popover" data-placement="bottom" data-content='
-                        <a href="xmpp://kanektikys@jabber.ru" title="чат">kanektikys@jabber.ru</a>
-                    '>
-                    </li>
-                    <li title="Skype" class="icon-phone" data-toggle="popover" data-placement="bottom" data-content='
-                        <a href="skype:kanektikys">KANekTikys</a>
-                    '>
-                    </li>
-                    <li title="Вконтакте" class="icon-vk" data-toggle="popover" data-placement="bottom" data-content='
-                        <a target="_blank" href="http://vk.com/kanektikys">Андрей KANekT Пронин</a>
-                    '>
-                    </li>
-                    <li title="GitHub" class="icon-github" data-toggle="popover" data-placement="bottom" data-content='
-                        <a target="_blank" href="https://github.com/KANekT">KANekT</a>
-                    '>
-                    </li>
-                    <li title="PunBB" class="icon-punbb" data-toggle="popover" data-placement="bottom" data-content='
-                        <a target="_blank" href="http://punbb.ru/user1737.html">KANekT</a><br />
-                        <p>Разработка расширений для форумного движка PunBB</p>
-                    '>
-                    </li>
-                    <li title="Разработка" class="icon-settings" data-toggle="popover" data-placement="bottom" data-content='
-                        <p>Html, CSS, jQuery, PHP, C#, T-SQL;
-                        <p>MySQL, MSSQL, SQLite;
-                        <p>Участие в Open Source "PunBB";
-                    '>
-                    </li>
-                    <li title="Обо мне" class="icon-user" data-toggle="popover" data-placement="bottom" data-content='
-                        <a target="_blank" href="pronin.pdf">Резюме</a>
-                    '>
-                    </li>
+                    <li title="Опыт работы" class="icon-development" href="#development"></li>
+                    <!--<li title="Портфолио" class="icon-portfolio" href="#portfolio"></li>-->
+                    <li title="Обо мне" class="icon-about" href="#about"></li>
                 </ul>
             </div>
             <hr>
-            <div id="carousel">
-                <div id="c1">
-                    <img src="img/punbb_big.png" alt="Add Fields" width="72" />
-                    <h3>Add Fields</h3>
-                    <p>Позволяет создавать дополнительные поля в профиле пользователя.
-                    <p>Поле может быть ссылкой или текстом.
-                    <p>Есть опция выноса текста поля под аватарку в сообщениях форума.
-                    <p><a href="https://github.com/downloads/KANekT/PunBB-extensions/nya_fields_0.4.1.zip">Загрузить</a>
-                </div>
-                <div id="c2">
-                    <img src="img/punbb_big.png" alt="" width="72" />
-                    <h3>First post</h3>
-                    <p>Позволяет закрепить первое сообщение в темах форума
-                    <p><a href="https://github.com/downloads/KANekT/PunBB-extensions/nya_first_post_0.4.1.zip">Загрузить</a>
-                </div>
-                <div id="c3">
-                    <img src="img/punbb_big.png" alt="" width="72" />
-                    <h3>Hide</h3>
-                    <p>Позволяет скрыть часть текста от гостей и пользователей не набравших определенное кол-во постов.
-                    <p>Админы и модераторы категорий видят скрытый текст.
-                    <p><a href="https://github.com/downloads/KANekT/PunBB-extensions/hide_0.4.1.zip">Загрузить</a>
-                </div>
-                <div id="c4">
-                    <img src="img/punbb_big.png" alt="" width="72" />
-                    <h3>jQuery UI</h3>
-                    <p>Позволяет подключить библиотеку jQuery UI.
-                    <p>Используется разработчиками для создания интерфейса пользователя.
-                    <p><a href="https://github.com/downloads/KANekT/PunBB-extensions/nya_jquery_ui_0.4.0.zip">Загрузить</a>
-                </div>
-                <div id="c5">
-                    <img src="img/punbb_big.png" alt="" width="72" />
-                    <h3>Author topic - Moderator</h3>
-                    <p>Позволяет определить группы в которых Автор темы получает права модератора.
-                    <p><a href="https://github.com/downloads/KANekT/PunBB-extensions/nya_moder_author_0.2.1.zip">Загрузить</a>
-                </div>
-                <div id="c6">
-                    <img src="img/punbb_big.png" alt="" width="72" />
-                    <h3>Move users to group</h3>
-                    <p>Автоматический перенос пользователей в группу при определенном кол-ве сообщений в темах форума.
-                    <p><a href="https://github.com/downloads/KANekT/PunBB-extensions/nya_move_users_groups_0.2.1.zip">Загрузить</a>
-                </div>
-                <div id="c7">
-                    <img src="img/punbb_big.png" alt="" width="72" />
-                    <h3>Smiles</h3>
-                    <p>Добавляет смайлы на форум.
-                    <p><a href="https://github.com/downloads/KANekT/PunBB-extensions/nya_smiles_0.3.1.zip">Загрузить</a>
-                </div>
-                <div id="c8">
-                    <img src="img/punbb_big.png" alt="" width="72" />
-                    <h3>Thanks</h3>
-                    <p>Позволяет сказать "Спасибо" пользователям за сообщение.
-                    <p><a href="https://github.com/downloads/KANekT/PunBB-extensions/nya_thanks_0.7.3.zip">Загрузить</a>
-                </div>
-                <div id="c9">
-                    <img src="img/punbb_big.png" alt="" width="72" />
-                    <h3>Topic Description</h3>
-                    <p>Позволяет делать описание для тем.
-                    <p>Добавляет meta тег Description в темы форума.
-                    <p><a href="https://github.com/downloads/KANekT/PunBB-extensions/nya_fields_0.4.1.zip">Загрузить</a>
-                </div>
-                <div id="c10">
-                    <img src="img/monstra_big.png" alt="" width="72" />
-                    <h3>Table From CSV</h3>
-                    <p>Позволяет показать Таблицу из CSV файла на странице.
-                    <p>Short Code {price file=iOmuXJP4eN.csv}
-                    <p><a href="https://github.com/downloads/KANekT/monstra/price_1.1.0.zip">Загрузить</a>
-                </div>
-                <!--<div id="c10">
-                    <img src="img/punbb_big.png" alt="" width="72" />
-                    <h3></h3>
-                    <p>
-                </div>-->
-            </div>
+        </nav>
+        <nav id="content">
         </nav>
     </div>
     <div class="body_bottom">
