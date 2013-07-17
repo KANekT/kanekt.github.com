@@ -6,22 +6,22 @@
             <dt class="icon-gmail"></dt>
             <dd>GMail:
                 <br /><a href="mailto:kanektikys@gmail.com" title="письмо">KANekTikys@gmail.com</a>
-                <br /><br />
+                <br />
             </dd>
             <dt class="icon-jabber"></dt>
             <dd>Jabber:
                 <br /><a href="xmpp://kanektikys@jabber.ru">kanektikys@jabber.ru</a>
-                <br /><br />
+                <br />
             </dd>
             <dt class="icon-phone"></dt>
             <dd>Skype:
                 <br /><a href="skype:kanektikys">KANekTikys</a>
-                <br /><br />
+                <br />
             </dd>
             <dt class="icon-vk"></dt>
             <dd>VK:
                 <br /><a target="_blank" href="http://vk.com/kanektikys">Андрей KANekT Пронин</a>
-                <br /><br />
+                <br />
             </dd>
         </dl>
         <h1>Разработка:</h1>
@@ -30,17 +30,17 @@
             <dt class="icon-github"></dt>
             <dd>GitHub:
                 <br /><a target="_blank" href="https://github.com/KANekT">KANekT</a>
-                <br /><br />
+                <br />
             </dd>
             <dt class="icon-punbb"></dt>
             <dd>PunBB:
                 <br /><a target="_blank" href="http://punbb.ru/user1737.html">KANekT</a>
-                <br /><br />
+                <br />
             </dd>
             <dt class="icon-monstra"></dt>
             <dd>Monstra:
                 <br /><a target="_blank" href="http://ru.forum.monstra.org/user/104/">KANekT</a>
-                <br /><br />
+                <br />
             </dd>
         </dl>
     </div>
@@ -64,9 +64,9 @@
                 <label><strong>Сообщение<i>*</i></strong> <span id="error-message" class="error hidden"><small>Вы не написали сообщение</small></span></label>
                 <textarea name="message" id="message" class="textarea rounded-small"></textarea>
             </div>
-            <div class="field">
-                <input type="submit" value="Отправить сообщение" class="button bLeft" name="submit" id="submit">
-                <input type="reset" value="Очистить" class="button bRight" name="reset" id="reset">
+            <div class="field btn-group">
+                <input type="submit" value="Отправить сообщение" class="btn bLeft" name="submit" id="submit">
+                <input type="reset" value="Очистить форму" class="btn bRight" name="reset" id="reset">
             </div>
             <div class="field"><span class="email-send"></span>
             </div>

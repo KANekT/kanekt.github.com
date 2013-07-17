@@ -1,7 +1,4 @@
 $(function() {
-    var h = $(document).height()-250;
-    if (h < 700) h = 700;
-    $('.body_middle').height(h);
     $("a[href^='http']").attr('target','_blank');
     $("#icons li").tooltip({placement: 'bottom'});
 });
@@ -26,6 +23,8 @@ function setPage(page, title) {
         $('#content').html(data);
         NavigationCache[page] = data;
         history.pushState({page: page, type: "page"}, document.title + title, page);
+        $(".btn-group button").removeClass('active');
+        $('button[data-action="'+page+'"]').addClass('active');
     })
 }
 
@@ -48,8 +47,8 @@ $(function() {
             }
         }
 
-        $("#icons li").live("click", function(){
-            setPage($(this).attr('href'), $(this).attr('title'));
+        $(".btn-group button").live("click", function(){
+            setPage($(this).attr('data-action'), $(this).attr('title'));
             return false;
         })
     }
