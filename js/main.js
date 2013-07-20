@@ -4,19 +4,6 @@ $(function() {
 });
 
 var NavigationCache = new Array();
-$(document).ready(function(){
-    if (window.location.hash.length > 0)
-    {
-        setPage(window.location.hash, '');
-    }
-    else
-    {
-        setPage('#development', '');
-    }
-
-    NavigationCache[window.location.hash] = $('#content').html();
-    history.pushState({page: window.location.hash, type: "page"}, document.title, window.location.hash);
-});
 
 function setPage(page, title) {
     $.get('ajax/' + page.substr(1, page.length) + '.k', function(data){
@@ -38,6 +25,18 @@ function validateEmail($email) {
 }
 
 $(function() {
+    if (window.location.hash.length > 0)
+    {
+        setPage(window.location.hash, '');
+    }
+    else
+    {
+        setPage('#development', '');
+    }
+
+    NavigationCache[window.location.hash] = $('#content').html();
+    history.pushState({page: window.location.hash, type: "page"}, document.title, window.location.hash);
+
     if (history.pushState) {
         window.onpopstate = function(event) {
             if (event.state.type.length > 0) {
@@ -47,13 +46,13 @@ $(function() {
             }
         }
 
-        $(".btn-group button").live("click", function(){
+        $(".btn-group").on("click", "button", function(){
             setPage($(this).attr('data-action'), $(this).attr('title'));
             return false;
         })
     }
 
-    $("#submit").live("click", function(e){
+    $(document).on("submit", "form", function(e){
         e.preventDefault();
         var noError = true;
 
@@ -91,8 +90,14 @@ $(function() {
         {
             var data = $("form").serialize();
             $.post('http://mail.kanekt.ru/send',data,function(data){
-                $(".email-send").text('Сообщение отправлено');
-            });
+
+            }).done(function(data) {
+                    $(".email-send").text('Сообщение отправлено');
+                    $("#reset").click();
+                }).fail(function(data) {
+                    $(".email-send").text('Сообщение отправлено');
+                    $("#reset").click();
+                });
         }
         return false;
     });
