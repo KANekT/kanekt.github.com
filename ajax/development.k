@@ -27,11 +27,11 @@
             <b>Web программист</b>
         </div>
         <div class="work">
-            — Разработка приложений на C#, ASP.NET, (WebWorms, MVC 3)
+            — Разработка приложений на C#, ASP.NET, (WebForms, MVC 3)
             <br />
-            — Back end обработка запросов с помощью jQuery (jqGrid, jQuery UI)
+            — Back end обработка запросов: jQuery (jqGrid, jQuery UI)
             <br />
-            — Разработка и верстка дизайна с помощью HTML, CSS (Bootstrap)
+            — Разработка и верстка дизайна: HTML, CSS (Bootstrap)
             <br />
             — Работа с MS SQL: T-SQL и проектирование структуры БД
             <br />
