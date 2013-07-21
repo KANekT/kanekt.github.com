@@ -1,8 +1,3 @@
-$(function() {
-    $("a[href^='http']").attr('target','_blank');
-    $("#icons li").tooltip({placement: 'bottom'});
-});
-
 var NavigationCache = new Array();
 
 function setPage(page, title) {
@@ -12,6 +7,8 @@ function setPage(page, title) {
         history.pushState({page: page, type: "page"}, document.title + title, page);
         $(".btn-group button").removeClass('active');
         $('button[data-action="'+page+'"]').addClass('active');
+        $("dt .item-h1").tooltip({placement: 'bottom'});
+        $(".portfolio-item.page1").show();
     })
 }
 
@@ -51,6 +48,14 @@ $(function() {
             return false;
         })
     }
+
+    $("#content").on('click', '.pagination li', function(){
+        $(".portfolio-item").hide();
+        $(".pagination ul > li").removeClass("active");
+        var page = $(this).attr("data-page");
+        $(this).addClass("active");
+        $(".portfolio-item." + page).show();
+    });
 
     $(document).on("submit", "form", function(e){
         e.preventDefault();
