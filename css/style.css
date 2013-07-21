@@ -430,9 +430,7 @@ FORM textarea
     border-color: rgb( 153, 153, 153 );
     border-style: solid;
     border-radius: 6px;
-    background-image: -moz-linear-gradient( 90deg, rgb(235,235,235) 0%, rgb(245,245,245) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(235,235,235) 0%, rgb(245,245,245) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(235,235,235) 0%, rgb(245,245,245) 100%);
+    background-color: #FFFFFF;
     float: left;
     margin-left: 20px;
     margin-bottom: 20px;
