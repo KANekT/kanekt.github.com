@@ -1,28 +1,5 @@
 <div class="portfolio">
     <div class="portfolio-item page1">
-        <div class="desc"><div class="icon-monstra"></div>
-            <dt><span class="item-h1" title="Плагин для CMS Monstra">Developer</span></dt>
-            <dd>
-                <p>Плагин для разработчиков.
-                <p>Позволяет делать разбивку на страницы, загрузку изображений.
-            </dd>
-        </div>
-        <div class="download">
-            <p><a href="http://files.kanekt.ru/monstra/dev" target="_blank">Скачать</a>
-        </div>
-    </div>
-    <div class="portfolio-item page1">
-        <div class="desc">
-            <dt><span class="icon-monstra"></span><span class="item-h1" title="Плагин для CMS Monstra">Gallery</span></dt>
-            <dd>
-                <p>Плагин для создания галереи изображений.
-            </dd>
-        </div>
-        <div class="download">
-            <p><a href="http://files.kanekt.ru/monstra/gallery" target="_blank">Скачать</a>
-        </div>
-    </div>
-    <div class="portfolio-item page1">
         <div class="desc">
             <dt><span class="icon-monstra"></span><span class="item-h1" title="Плагин для CMS Monstra">News</span></dt>
             <dd>
@@ -68,7 +45,7 @@
             <p><a href="http://files.kanekt.ru/punbb/nya_first_post" target="_blank">Скачать</a>
         </div>
     </div>
-    <div class="portfolio-item page2">
+    <div class="portfolio-item page1">
         <div class="desc">
             <dt><span class="icon-punbb"></span><span class="item-h1" title="Расширение для форума PunBB">Hide</span></dt>
             <dd>
@@ -80,7 +57,7 @@
             <p><a href="http://files.kanekt.ru/punbb/hide" target="_blank">Скачать</a>
         </div>
     </div>
-    <div class="portfolio-item page2">
+    <div class="portfolio-item page1">
         <div class="desc">
             <dt><span class="icon-punbb"></span><span class="item-h1" title="Расширение для форума PunBB">jQuery UI</span></dt>
             <dd>
@@ -136,7 +113,7 @@
             <p><a href="http://files.kanekt.ru/punbb/nya_thanks" target="_blank">Скачать</a>
         </div>
     </div>
-    <div class="portfolio-item page3">
+    <div class="portfolio-item page2">
         <div class="desc">
             <dt><span class="icon-punbb"></span><span class="item-h1" title="Расширение для форума PunBB">Topic Description</span></dt>
             <dd>
@@ -153,6 +130,5 @@
     <ul>
         <li data-page="page1" class="active"><span>1</span></li>
         <li data-page="page2"><span>2</span></li>
-        <li data-page="page3"><span>3</span></li>
     </ul>
 </div>
