@@ -68,7 +68,7 @@
                 — Использование средств командной разработки Microsoft Visual SourceSafe, Git, Svn
             </div>
         </div>
-    <hr>
+    <hr />
     <h1>Open Source</h1>
         <div>
             <div class="work">
@@ -82,7 +82,7 @@
                 <br />Создано русско-язычное сообщество <a href="http://ogmacms.ru">OGMA CMS по-русски</a>
             </div>
         </div>
-    <hr>
+    <hr />
     <h1>Ключевые навыки:</h1>
     <div>
         <div class="work">
