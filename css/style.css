@@ -489,6 +489,7 @@ FORM textarea
 
 .pagination {
     text-align: center;
+    height: 50px;
 }
 .pagination ul {
     border-radius: 4px 4px 4px 4px;
