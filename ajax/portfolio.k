@@ -1,6 +1,7 @@
 <div class="portfolio">
     <h1>В данном разделе Вы можете посмотреть созданные плагины.</h1>
     <i>Большинство информационных продуктов разработанны под ключ и не могут быть представлены в данном разделе - по соглашению с заказчиком.</i>
+    <div class="clearfix"></div>
     <div class="portfolio-item page1">
         <div class="desc">
             <dt><span class="icon-monstra"></span><span class="item-h1" title="Плагин для CMS Monstra">News</span></dt>
