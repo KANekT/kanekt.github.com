@@ -31,7 +31,7 @@ body
 {
     display: block;
     width: 948px;
-    height: 672px;
+    min-height: 672px;
     background-image: url("/img/body_middle.png");
 }
 .body_neko
