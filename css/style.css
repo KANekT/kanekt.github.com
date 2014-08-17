@@ -12,28 +12,28 @@ body
     color: #333333;
     font: 14px 'Ubuntu Mono',Arial,Helvetica,sans-serif;
 }
-.main
+.body
 {
     margin: 0 auto;
     min-width: 948px;
     width: 948px;
     padding: 20px 0;
 }
-.body_middle
+.content
 {
     display: block;
     width: 948px;
     min-height: 672px;
     background-image: url("../img/body_middle.png");
 }
-.main:before{
+.body:before{
     display: block;
     width: 948px;
     height: 83px;
     background-image: url("../img/body_top.png");
     content: "";
 }
-.main:after{
+.body:after{
     display: block;
     width: 948px;
     height: 83px;
@@ -42,17 +42,24 @@ body
     font-size: 0.8em;
     text-align: center;
 }
-.body_neko
+.content footer
 {
-    display: block;
-    width: 948px;
-    height: 108px;
-    background-image: url("../img/body_middle.png");
+    width: 108px;
+    height: 107px;
+    background-image: url("../img/neko.png");
+    display: inline-block;
+    font-size: 0;
+    position: relative;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin: 0 420px;
+    line-height: 110px;
 }
 
 main
 {
     padding: 0 90px;
+    min-height: 421px;
 }
 main h1
 {
@@ -74,19 +81,7 @@ main h1
     margin: 0 380px;
     line-height: 42px;
 }
-#neko
-{
-    width: 108px;
-    height: 107px;
-    background-image: url("../img/neko.png");
-    display: inline-block;
-    font-size: 0;
-    position: relative;
-    vertical-align: middle;
-    white-space: nowrap;
-    margin: 0 420px;
-    line-height: 110px;
-}
+
 #description
 {
     font-family: 'Ubuntu Mono', serif;
