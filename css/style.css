@@ -29,14 +29,14 @@ body
 .body:before{
     display: block;
     width: 948px;
-    height: 83px;
+    height: 82px;
     background-image: url("../img/body_top.png");
     content: "";
 }
 .body:after{
     display: block;
     width: 948px;
-    height: 83px;
+    height: 82px;
     background-image: url("../img/body_bottom.png");
     content: 'Создано в 2012 году.';
     font-size: 0.8em;
