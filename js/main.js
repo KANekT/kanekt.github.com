@@ -2,7 +2,7 @@ var NavigationCache = new Array();
 
 function setPage(page, title) {
     $.get('ajax/' + page.substr(1, page.length) + '.k', function(data){
-        $('#content').html(data);
+        $('main').html(data);
         NavigationCache[page] = data;
         history.pushState({page: page, type: "page"}, document.title + title, page);
         $(".btn-group button").removeClass('active');
@@ -31,14 +31,14 @@ $(function() {
         setPage('#development', '');
     }
 
-    NavigationCache[window.location.hash] = $('#content').html();
+    NavigationCache[window.location.hash] = $('main').html();
     history.pushState({page: window.location.hash, type: "page"}, document.title, window.location.hash);
 
     if (history.pushState) {
         window.onpopstate = function(event) {
             if (event.state.type.length > 0) {
                 if (NavigationCache[event.state.page].length>0) {
-                    $('#content').html(NavigationCache[event.state.page]);
+                    $('main').html(NavigationCache[event.state.page]);
                 }
             }
         }
@@ -49,7 +49,7 @@ $(function() {
         })
     }
 
-    $("#content").on('click', '.pagination li', function(){
+    $("main").on('click', '.pagination li', function(){
         $(".portfolio-item").hide();
         $(".pagination ul > li").removeClass("active");
         var page = $(this).attr("data-page");

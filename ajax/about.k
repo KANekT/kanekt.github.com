@@ -53,16 +53,16 @@
 
                 <label><strong>Ваше Имя<i>*</i></strong> <span id="error-name" class="error hidden"><small>Вы не указали Имя</small></span></label>
 
-                <input type="text" value="" name="name" id="name" class="textbox rounded-small">
+                <input type="text" value="" name="name" id="name" class="textbox rounded-small" autofocus required>
             </div>
             <div class="field">
                 <label><strong>Ваш email<i>*</i></strong> <span id="error-email" class="error hidden"><small>Вы не указали правильный Email</small></span></label>
 
-                <input type="text" value="" name="email" id="email" class="textbox rounded-small">
+                <input type="text" value="" name="email" id="email" class="textbox rounded-small" required>
             </div>
             <div class="field">
                 <label><strong>Сообщение<i>*</i></strong> <span id="error-message" class="error hidden"><small>Вы не написали сообщение</small></span></label>
-                <textarea name="message" id="message" class="textarea rounded-small"></textarea>
+                <textarea name="message" id="message" class="textarea rounded-small" required></textarea>
             </div>
             <div class="field btn-group">
                 <input type="submit" value="Отправить сообщение" class="btn bLeft" name="submit" id="submit">
