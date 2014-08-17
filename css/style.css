@@ -117,10 +117,10 @@ hr {
 [class^="icon-"], [class*=" icon-"] {
     background: url("../img/icons-sprite.png") no-repeat 0px 0px;
     display: inline-block;
-    height: 79px;
+    height: 24px;
     line-height: 24px;
     vertical-align: text-bottom;
-    width: 440px;
+    width: 30px;
     margin: 0 5px;
     cursor: pointer;
 }
