@@ -8,8 +8,7 @@ article,aside,footer,header,hgroup,nav,section,figure,figcaption { display: bloc
 
 body
 {
-    background-color: #00579c;
-    background-image: url("/img/background-interlaced.png");
+    background: #00579c url("../img/background-interlaced.png");
     color: #333333;
     font: 14px 'Ubuntu Mono',Arial,Helvetica,sans-serif;
 }
@@ -25,28 +24,28 @@ body
     display: block;
     width: 948px;
     height: 83px;
-    background-image: url("/img/body_top.png");
+    background-image: url("../img/body_top.png");
 }
 .body_middle
 {
     display: block;
     width: 948px;
     min-height: 672px;
-    background-image: url("/img/body_middle.png");
+    background-image: url("../img/body_middle.png");
 }
 .body_neko
 {
     display: block;
     width: 948px;
     height: 108px;
-    background-image: url("/img/body_middle.png");
+    background-image: url("../img/body_middle.png");
 }
 .body_bottom
 {
     display: block;
     width: 948px;
     height: 83px;
-    background-image: url("/img/body_bottom.png");
+    background-image: url("../img/body_bottom.png");
 }
 #content h1
 {
@@ -59,7 +58,7 @@ body
 {
     width: 188px;
     height: 41px;
-    background-image: url("/img/kanekt.png");
+    background-image: url("../img/kanekt.png");
     display: inline-block;
     font-size: 0;
     position: relative;
@@ -72,7 +71,7 @@ body
 {
     width: 108px;
     height: 107px;
-    background-image: url("/img/neko.png");
+    background-image: url("../img/neko.png");
     display: inline-block;
     font-size: 0;
     position: relative;
@@ -110,20 +109,18 @@ ul > li {
 }
 hr {
     border: none;
-    background-image: url("/img/line.png");
+    background-image: url("../img/line.png");
     height: 1px;
     margin: 15px 0;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-    background-image: url("/img/icons-sprite.png");
-    background-position: 0px 0px;
-    background-repeat: no-repeat;
+    background: url("../img/icons-sprite.png") no-repeat 0px 0px;
     display: inline-block;
-    height: 24px;
+    height: 79px;
     line-height: 24px;
     vertical-align: text-bottom;
-    width: 30px;
+    width: 440px;
     margin: 0 5px;
     cursor: pointer;
 }
@@ -352,9 +349,7 @@ FORM textarea
 }
 
 .btn {
-    border-width: 1px;
-    border-color: rgb( 153, 153, 153 );
-    border-style: solid;
+    border: 1px solid rgb(153, 153, 153);
     border-radius: 6px;
     background-image: -moz-linear-gradient( 90deg, rgb(235,235,235) 0%, rgb(245,245,245) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(235,235,235) 0%, rgb(245,245,245) 100%);
@@ -365,9 +360,7 @@ FORM textarea
 }
 
 .btn:hover, .btn.active {
-    border-width: 1px;
-    border-color: rgb( 153, 153, 153 );
-    border-style: solid;
+    border: 1px solid rgb(153, 153, 153);
     border-radius: 6px;
     background-image: -moz-linear-gradient( 90deg, rgb(136,136,136) 0%, rgb(139,139,139) 15%, rgb(142,142,142) 24%, rgb(123,123,123) 72%, rgb(104,104,104) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(136,136,136) 0%, rgb(139,139,139) 15%, rgb(142,142,142) 24%, rgb(123,123,123) 72%, rgb(104,104,104) 100%);
@@ -426,9 +419,7 @@ FORM textarea
     text-decoration: none;
     width: 227px;
     word-wrap: break-word;
-    border-width: 1px;
-    border-color: rgb( 153, 153, 153 );
-    border-style: solid;
+    border: 1px solid rgb(153, 153, 153);
     border-radius: 6px;
     background-color: #FFFFFF;
     float: left;
@@ -453,8 +444,7 @@ FORM textarea
 }
 .portfolio-item .download
 {
-    border-width: 1px;
-    border-color: rgb( 153, 153, 153 );
+    border: 1px rgb(153, 153, 153);
     border-top-style: solid;
     height: 21px;
     line-height: 20px;
@@ -507,10 +497,9 @@ FORM textarea
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
     background-color: #FFFFFF;
-    border-color: #DDDDDD;
     border-image: none;
-    border-style: solid;
-    border-width: 1px 1px 1px 0;
+    border: 1px solid #DDDDDD;
+    border-left-width: 0;
     float: left;
     line-height: 20px;
     padding: 4px 12px;
