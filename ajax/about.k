@@ -47,7 +47,7 @@
     <div class="cRight">
         <h1>Написать письмо:</h1>
         <br />
-        <form action="email" method="post">
+        <form id="feedbackForm" method="post">
             <input type="hidden" value="feedbackForm" name="formid">
             <div class="field">
 
@@ -62,7 +62,7 @@
             </div>
             <div class="field">
                 <label><strong>Сообщение<i>*</i></strong> <span id="error-message" class="error hidden"><small>Вы не написали сообщение</small></span></label>
-                <textarea name="message" id="message" class="textarea rounded-small" required></textarea>
+                <textarea name="message_html" id="message_html" class="textarea rounded-small" required></textarea>
             </div>
             <div class="field btn-group">
                 <input type="submit" value="Отправить сообщение" class="btn bLeft" name="submit" id="submit">
@@ -71,5 +71,11 @@
             <div class="field"><span class="email-send"></span>
             </div>
         </form>
+		<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+		<script type="text/javascript">
+		   (function(){
+		      emailjs.init("user_Yf4xnfXZxvXRCEPPwAb9n");
+		   })();
+		</script>
     </div>
 </div>

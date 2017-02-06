@@ -57,7 +57,7 @@ $(function() {
         $(".portfolio-item." + page).show();
     });
 
-    $(document).on("submit", "form", function(e){
+    $(document).on("submit", "form#feedbackForm", function(e){
         e.preventDefault();
         var noError = true;
 
@@ -81,7 +81,7 @@ $(function() {
             $("#error-email").hide();
         }
 
-        if ($("#message").val().length == 0)
+        if ($("#message_html").val().length == 0)
         {
             noError = false;
             $("#error-message").show();
@@ -93,15 +93,20 @@ $(function() {
 
         if (noError)
         {
-            var data = $("form").serialize();
-            $.post('http://mail.kanekt.ru/send',data,function(data){
+            var mailForm = $("form#feedbackForm")
+            var params = mailForm.serializeArray().reduce(function(obj, item) {
+                obj[item.name] = item.value;
+                return obj;
+            }, {});
 
-            }).done(function(data) {
+            var service_id = "default_service";
+            var template_id = "template_AwoBd9nk";
+            emailjs.send(service_id,template_id,params)
+                .then(function(){ 
                     $(".email-send").text('Сообщение отправлено');
                     $("#reset").click();
-                }).fail(function(data) {
-                    $(".email-send").text('Сообщение отправлено');
-                    $("#reset").click();
+                }, function(err) {
+                    $(".email-send").text('Сообщение не отправлено: ' + JSON.stringify(err)));
                 });
         }
         return false;
