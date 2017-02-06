@@ -106,7 +106,7 @@ $(function() {
                     $(".email-send").text('Сообщение отправлено');
                     $("#reset").click();
                 }, function(err) {
-                    $(".email-send").text('Сообщение не отправлено: ' + JSON.stringify(err)));
+                    $(".email-send").text('Сообщение не отправлено: ' + JSON.stringify(err));
                 });
         }
         return false;
