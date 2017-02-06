@@ -8,14 +8,9 @@
                 <br /><a href="mailto:kanektikys@gmail.com" title="письмо">KANekTikys@gmail.com</a>
                 <br />
             </dd>
-            <dt class="icon-jabber"></dt>
-            <dd>Jabber:
-                <br /><a href="xmpp://kanektikys@jabber.ru">kanektikys@jabber.ru</a>
-                <br />
-            </dd>
             <dt class="icon-phone"></dt>
             <dd>Skype:
-                <br /><a href="skype:kanektikys">KANekTikys</a>
+                <br /><a href="skype:pronin.andrey.v">Pronin.Andrey.V</a>
                 <br />
             </dd>
             <dt class="icon-vk"></dt>
