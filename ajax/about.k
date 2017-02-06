@@ -61,7 +61,7 @@
             </div>
             <div class="field">
                 <label><strong>Сообщение<i>*</i></strong> <span id="error-message" class="error hidden"><small>Вы не написали сообщение</small></span></label>
-                <textarea name="message" id="message_html" class="textarea rounded-small" required></textarea>
+                <textarea name="message" id="message" class="textarea rounded-small" required></textarea>
             </div>
             <div class="field btn-group">
                 <input type="submit" value="Отправить сообщение" class="btn bLeft" name="submit" id="submit">
