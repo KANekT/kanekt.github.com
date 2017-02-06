@@ -48,7 +48,6 @@
         <h1>Написать письмо:</h1>
         <br />
         <form id="feedbackForm" method="post">
-            <input type="hidden" value="feedbackForm" name="formid">
             <div class="field">
 
                 <label><strong>Ваше Имя<i>*</i></strong> <span id="error-name" class="error hidden"><small>Вы не указали Имя</small></span></label>
@@ -62,7 +61,7 @@
             </div>
             <div class="field">
                 <label><strong>Сообщение<i>*</i></strong> <span id="error-message" class="error hidden"><small>Вы не написали сообщение</small></span></label>
-                <textarea name="message_html" id="message_html" class="textarea rounded-small" required></textarea>
+                <textarea name="message" id="message_html" class="textarea rounded-small" required></textarea>
             </div>
             <div class="field btn-group">
                 <input type="submit" value="Отправить сообщение" class="btn bLeft" name="submit" id="submit">

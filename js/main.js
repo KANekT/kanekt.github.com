@@ -81,7 +81,7 @@ $(function() {
             $("#error-email").hide();
         }
 
-        if ($("#message_html").val().length == 0)
+        if ($("#message").val().length == 0)
         {
             noError = false;
             $("#error-message").show();
