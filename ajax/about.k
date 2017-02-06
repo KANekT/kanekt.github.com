@@ -15,7 +15,7 @@
             </dd>
             <dt class="icon-vk"></dt>
             <dd>VK:
-                <br /><a target="_blank" href="http://vk.com/kanektikys">Андрей KANekT Пронин</a>
+                <br /><a target="_blank" href="http://vk.com/kanektikys">Пронин Андрей</a>
                 <br />
             </dd>
         </dl>
